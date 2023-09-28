@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using TestShop.Core;
 using UnityEngine;
 
 namespace TestShop.Health
 {
     [Serializable]
-    public class HealthReward : IReward
+    public class HealthPercentReward : IReward
     {
         [field: SerializeField]
         public int Vlaue { get; private set; }
@@ -16,7 +16,10 @@ namespace TestShop.Health
 
         public void Apply()
         {
-            Consumer.Add(Vlaue);
+            int currentHealth = Consumer.Count;
+            float additionalHealth = (float)Vlaue / 100f;
+            currentHealth += Mathf.RoundToInt(additionalHealth);
+            Consumer.Add(currentHealth);
         }
     }
 }

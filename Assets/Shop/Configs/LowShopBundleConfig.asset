@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: LowShopBundleConfig
   m_EditorClassIdentifier: 
   rewards:
-  - rid: 658560833462206464
+  - rid: 658560833462206485
   priceSpendable:
-    rid: 658560833462206467
-  <Price>k__BackingField: 10
+    rid: 658560833462206482
+  <Price>k__BackingField: 5
+  <Name>k__BackingField: Cheap Bundle
   references:
     version: 2
     RefIds:
-    - rid: 658560833462206464
+    - rid: 658560833462206482
+      type: {class: RatingManageWrap, ns: TestShop.Rating, asm: Rating}
+      data: 
+    - rid: 658560833462206485
       type: {class: GoldReward, ns: TestShop.Gold, asm: Gold}
       data:
-        <Vlaue>k__BackingField: 10
-    - rid: 658560833462206467
-      type: {class: GoldManageWrap, ns: TestShop.Gold, asm: Gold}
-      data: 
+        <Vlaue>k__BackingField: 5

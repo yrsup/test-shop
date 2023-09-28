@@ -17,6 +17,9 @@ namespace TestShop.Shop
         [field: SerializeField] public int Price { get; private set; }
 
 
+        [field: SerializeField] public string Name { get; private set; }
+
+
         public List<IReward> Rewards => rewards;
 
 

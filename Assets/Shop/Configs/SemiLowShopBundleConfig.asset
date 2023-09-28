@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b99982ec199aa84a9610bbb60481b2d, type: 3}
-  m_Name: MediumShopBundleConfig
+  m_Name: SemiLowShopBundleConfig
   m_EditorClassIdentifier: 
   rewards:
-  - rid: 658560833462206465
-  - rid: 658560833462206486
+  - rid: 658560833462206485
+  - rid: 658560833462206489
   priceSpendable:
-    rid: 658560833462206487
-  <Price>k__BackingField: 10
-  <Name>k__BackingField: Meium Bundle
+    rid: 658560833462206482
+  <Price>k__BackingField: 7
+  <Name>k__BackingField: Semi Cheap Bundle
   references:
     version: 2
     RefIds:
-    - rid: 658560833462206465
+    - rid: 658560833462206482
+      type: {class: RatingManageWrap, ns: TestShop.Rating, asm: Rating}
+      data: 
+    - rid: 658560833462206485
       type: {class: GoldReward, ns: TestShop.Gold, asm: Gold}
       data:
-        <Vlaue>k__BackingField: 15
-    - rid: 658560833462206486
-      type: {class: RatingReward, ns: TestShop.Rating, asm: Rating}
+        <Vlaue>k__BackingField: 5
+    - rid: 658560833462206489
+      type: {class: HealthPercentReward, ns: TestShop.Health, asm: Healts}
       data:
-        <Vlaue>k__BackingField: 15
-    - rid: 658560833462206487
-      type: {class: HealthManageWrap, ns: TestShop.Health, asm: Healts}
-      data: 
+        <Vlaue>k__BackingField: 25

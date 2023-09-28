@@ -2,15 +2,15 @@
 using TestShop.Core;
 using UnityEngine;
 
-namespace TestShop.Health
+namespace TestShop.Rating
 {
-    public class HealthManage : ISpendable
+    public class RatingManage : ISpendable
     {
         private event Action ValueChanged;
-        public static HealthManage Instance { get; } = new HealthManage();
+        public static RatingManage Instance { get; } = new RatingManage();
 
 
-        public string Type => "Health";
+        public string Type => "Rating";
 
 
         public int Count { get; private set; }
@@ -20,7 +20,7 @@ namespace TestShop.Health
         {
             Count += amount;
             ValueChanged?.Invoke();
-            Debug.Log($"Health add: {amount}. Current Count={Count}");
+            Debug.Log($"Rating add: {amount}. Current Count={Count}");
         }
 
 
@@ -28,7 +28,7 @@ namespace TestShop.Health
         {
             Count -= amount;
             ValueChanged?.Invoke();
-            Debug.Log($"Health spend: {amount}. Current Count={Count}");
+            Debug.Log($"Rating spend: {amount}. Current Count={Count}");
         }
 
 

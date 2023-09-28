@@ -12,6 +12,13 @@ namespace TestShop.Gold
         [field: SerializeField]
         public int Vlaue { get; private set; }
 
+
         public ISpendable Consumer => GoldManage.Instance;
+
+
+        public void Apply()
+        {
+            Consumer.Add(Vlaue);
+        }
     }
 }

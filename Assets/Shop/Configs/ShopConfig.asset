@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configs:
   - {fileID: 11400000, guid: b7b629d5e53d02c4eb7acf4ba7f7f69a, type: 2}
+  - {fileID: 11400000, guid: 5901dd6d9857f714793b43ffab88f235, type: 2}
   - {fileID: 11400000, guid: f81c29f09cd56224e8707a3611b18d04, type: 2}
+  - {fileID: 11400000, guid: e288e030447460e4fad1d773fdf7ea1a, type: 2}
   availableSpendables:
   - rid: 658560833462206469
   - rid: 658560833462206470
+  - rid: 658560833462206488
   <CheatStep>k__BackingField: 5
   references:
     version: 2
@@ -27,4 +30,7 @@ MonoBehaviour:
       data: 
     - rid: 658560833462206470
       type: {class: HealthManageWrap, ns: TestShop.Health, asm: Healts}
+      data: 
+    - rid: 658560833462206488
+      type: {class: RatingManageWrap, ns: TestShop.Rating, asm: Rating}
       data: 

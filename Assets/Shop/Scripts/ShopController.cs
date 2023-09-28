@@ -10,7 +10,7 @@ namespace TestShop.Shop
     public class ShopController : MonoBehaviour
     {
         [SerializeField] private ShopConfig config;
-        [SerializeField] ShopWindow shopWindow;
+        [SerializeField] private ShopWindow shopWindow;
         private List<SpendableListener> spendableHandlers = new List<SpendableListener>();
 
 
@@ -63,7 +63,7 @@ namespace TestShop.Shop
 
         private void AddBuyCheat(ISpendable spendable)
         {
-            spendable.Spend(config.CheatStep);
+            spendable.Add(config.CheatStep);
         }
 
 

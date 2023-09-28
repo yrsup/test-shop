@@ -2,16 +2,16 @@ using System;
 using TestShop.Core;
 using UnityEngine;
 
-namespace TestShop.Health
+namespace TestShop.Rating
 {
     [Serializable]
-    public class HealthReward : IReward
+    public class RatingReward : IReward
     {
         [field: SerializeField]
         public int Vlaue { get; private set; }
 
 
-        public ISpendable Consumer => HealthManage.Instance;
+        public ISpendable Consumer => RatingManage.Instance;
 
 
         public void Apply()

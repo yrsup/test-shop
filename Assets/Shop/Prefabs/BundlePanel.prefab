@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c870e39517260b449af0f2efc5ec706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bundleName: {fileID: 5678998065533359382}
+  bundleNameLabel: {fileID: 5678998065533359382}
   shopBundleRewardView: {fileID: 6563048521327574830, guid: 26b5690257c5e9746a5fb8fbb53e1522, type: 3}
   shopBundleRewarRoot: {fileID: 5805286400615497112}
   buyButton: {fileID: 8347579340668852552}

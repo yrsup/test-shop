@@ -21,7 +21,7 @@ namespace TestShop.Shop.Ui
         public void Initialize(ShopBundleConfig bundleConfig, Action<ShopBundleConfig> tryBuy)
         {
             ShopBundleConfig = bundleConfig;
-            bundleNameLabel.text = bundleConfig.name;
+            bundleNameLabel.text = bundleConfig.Name;
             foreach (Core.IReward item in bundleConfig.Rewards)
             {
                 CreateReward(item);

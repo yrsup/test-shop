@@ -7,5 +7,7 @@ namespace TestShop.Core
         public int Vlaue { get; }
 
         public ISpendable Consumer { get; }
+
+        public void Apply();
     }
 }

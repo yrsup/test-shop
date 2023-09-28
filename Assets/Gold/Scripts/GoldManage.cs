@@ -21,7 +21,7 @@ namespace TestShop.Gold
         {
             Count += amount;
             ValueChanged?.Invoke();
-            Debug.LogError($"Gold add: {amount}. Current Count={Count}");
+            Debug.Log($"Gold add: {amount}. Current Count={Count}");
         }
 
 
@@ -41,7 +41,7 @@ namespace TestShop.Gold
         {
             Count -= amount;
             ValueChanged?.Invoke();
-            Debug.LogError($"Gold spend: {amount}. Current Count={Count}");
+            Debug.Log($"Gold spend: {amount}. Current Count={Count}");
         }
     }
 }

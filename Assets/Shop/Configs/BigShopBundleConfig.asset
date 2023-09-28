@@ -12,7 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b99982ec199aa84a9610bbb60481b2d, type: 3}
   m_Name: BigShopBundleConfig
   m_EditorClassIdentifier: 
-  rewards: []
+  rewards:
+  - rid: 658560833462206478
+  - rid: 658560833462206477
+  priceSpendable:
+    rid: 658560833462206475
+  <Price>k__BackingField: 15
+  <Name>k__BackingField: Big Bundle
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 658560833462206475
+      type: {class: GoldManageWrap, ns: TestShop.Gold, asm: Gold}
+      data: 
+    - rid: 658560833462206477
+      type: {class: HealthReward, ns: TestShop.Health, asm: Healts}
+      data:
+        <Vlaue>k__BackingField: 15
+    - rid: 658560833462206478
+      type: {class: RatingReward, ns: TestShop.Rating, asm: Rating}
+      data:
+        <Vlaue>k__BackingField: 15
