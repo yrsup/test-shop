@@ -6,6 +6,13 @@ namespace TestShop.Core
 {
     public interface ISpendable
     {
-        
+        public int Count { get; }
+
+
+        public void Add(int amount);
+
+
+
+        public void Spend(int amount);
     }
 }

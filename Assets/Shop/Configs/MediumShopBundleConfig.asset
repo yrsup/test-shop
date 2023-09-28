@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b99982ec199aa84a9610bbb60481b2d, type: 3}
+  m_Name: MediumShopBundleConfig
+  m_EditorClassIdentifier: 
+  rewards:
+  - rid: 658560833462206465
+  - rid: 658560833462206466
+  priceSpendable:
+    rid: 658560833462206468
+  <Price>k__BackingField: 10
+  references:
+    version: 2
+    RefIds:
+    - rid: 658560833462206465
+      type: {class: GoldReward, ns: TestShop.Gold, asm: Gold}
+      data:
+        <Vlaue>k__BackingField: 1111
+    - rid: 658560833462206466
+      type: {class: HealthReward, ns: TestShop.Health, asm: Healts}
+      data:
+        <Vlaue>k__BackingField: 222
+    - rid: 658560833462206468
+      type: {class: GoldManageWrap, ns: TestShop.Gold, asm: Gold}
+      data: 
