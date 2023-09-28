@@ -1,0 +1,16 @@
+{
+    "name": "Healts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:02f4ffdfa5ed35e4eb80640a6c827a0e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
