@@ -2,12 +2,12 @@
 using UnityEngine;
 using TMPro;
 
-namespace TestShop.Shop
+namespace TestShop.Shop.Ui
 {
     public class ShopBundleRewardView : MonoBehaviour
     {
-        [SerializeField] TextMeshProUGUI rewardNameText;
-        [SerializeField] TextMeshProUGUI rewardCountText;
+        [SerializeField] private TextMeshProUGUI rewardNameText;
+        [SerializeField] private TextMeshProUGUI rewardCountText;
 
 
 

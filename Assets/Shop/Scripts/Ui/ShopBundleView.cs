@@ -4,28 +4,31 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TestShop.Shop
+namespace TestShop.Shop.Ui
 {
     public class ShopBundleView : MonoBehaviour
     {
-        [SerializeField] TextMeshProUGUI bundleName;
-        [SerializeField] ShopBundleRewardView shopBundleRewardView;
-        [SerializeField] Transform shopBundleRewarRoot;
-        [SerializeField] Button buyButton;
-        List<ShopBundleRewardView> rewardViewsInstances = new List<ShopBundleRewardView>();
+        [SerializeField] private TextMeshProUGUI bundleNameLabel;
+        [SerializeField] private ShopBundleRewardView shopBundleRewardView;
+        [SerializeField] private Transform shopBundleRewarRoot;
+        [SerializeField] private Button buyButton;
+        private List<ShopBundleRewardView> rewardViewsInstances = new List<ShopBundleRewardView>();
+
+
+        public ShopBundleConfig ShopBundleConfig {get; private set;}
 
 
         public void Initialize(ShopBundleConfig bundleConfig, Action<ShopBundleConfig> tryBuy)
         {
-            bundleName.text = bundleConfig.name;
+            ShopBundleConfig = bundleConfig;
+            bundleNameLabel.text = bundleConfig.name;
             foreach (Core.IReward item in bundleConfig.Rewards)
             {
                 CreateReward(item);
             }
             buyButton.onClick.RemoveAllListeners();
             buyButton.onClick.AddListener(() => tryBuy?.Invoke(bundleConfig));
-
-            //bundleConfig.Price
+            UpdateView();
 
 
             void CreateReward(Core.IReward reward)
@@ -39,7 +42,8 @@ namespace TestShop.Shop
 
         public void UpdateView()
         {
-
+            bool canBuy = ShopBundleConfig.Price < ShopBundleConfig.PriceSpendable.Count;
+            buyButton.interactable = canBuy;
         }
     }
 }

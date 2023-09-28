@@ -15,3 +15,16 @@ MonoBehaviour:
   configs:
   - {fileID: 11400000, guid: b7b629d5e53d02c4eb7acf4ba7f7f69a, type: 2}
   - {fileID: 11400000, guid: f81c29f09cd56224e8707a3611b18d04, type: 2}
+  availableSpendables:
+  - rid: 658560833462206469
+  - rid: 658560833462206470
+  <CheatStep>k__BackingField: 5
+  references:
+    version: 2
+    RefIds:
+    - rid: 658560833462206469
+      type: {class: GoldManageWrap, ns: TestShop.Gold, asm: Gold}
+      data: 
+    - rid: 658560833462206470
+      type: {class: HealthManageWrap, ns: TestShop.Health, asm: Healts}
+      data: 

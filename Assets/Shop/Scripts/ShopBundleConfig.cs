@@ -8,10 +8,10 @@ namespace TestShop.Shop
     public class ShopBundleConfig : ScriptableObject
     {
         [SerializeReference, SelectImplementation(typeof(IReward))]
-        List<IReward> rewards = new List<IReward>();
+        private List<IReward> rewards = new List<IReward>();
 
         [SerializeReference, SelectImplementation(typeof(ISpendable))]
-        ISpendable priceSpendable;
+        private ISpendable priceSpendable;
 
 
         [field: SerializeField] public int Price { get; private set; }

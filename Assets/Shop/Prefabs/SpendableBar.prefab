@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 5860330348653492304}
   - component: {fileID: 7564435453041585087}
   m_Layer: 5
-  m_Name: CountLabelText (1)
+  m_Name: CountNumberLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,8 +657,9 @@ GameObject:
   - component: {fileID: 7554732907951822583}
   - component: {fileID: 1991171982526935673}
   - component: {fileID: 5334341198370816997}
+  - component: {fileID: 8069769056452327700}
   m_Layer: 5
-  m_Name: DefaultPanel
+  m_Name: SpendableBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -765,6 +766,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8069769056452327700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756371662403621951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108cf97711e1068498b932c73ab8a953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameLabel: {fileID: 3244738334653948010}
+  countLabel: {fileID: 7564435453041585087}
+  addButton: {fileID: 5929185794274883432}
+  removeButton: {fileID: 1701876668774335011}
 --- !u!1 &8053303037541093581
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +794,7 @@ GameObject:
   - component: {fileID: 1432286597526932443}
   - component: {fileID: 3244738334653948010}
   m_Layer: 5
-  m_Name: CountLabelText
+  m_Name: CountLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
