@@ -18,7 +18,7 @@ namespace TestShop.Shop.Ui
         public void Initialize(ISpendable spendable, Action<ISpendable> onAdd, Action<ISpendable> onRemove)
         {
             this.spendable = spendable;
-            nameLabel.text = spendable.GetType().Name;
+            nameLabel.text = spendable.Type;
 
             addButton.onClick.RemoveAllListeners();
             addButton.onClick.AddListener(() => onAdd?.Invoke(spendable));
